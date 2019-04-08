@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 title: Home
-about: Gut Buddies is an international physical theatre company specialising in absurdist
+about: Bacterial Factory is an international physical theatre company specialising in absurdist
   comedy.
 tour:
 - template: tour-date
