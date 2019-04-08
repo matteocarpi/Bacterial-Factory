@@ -114,8 +114,13 @@ a.cta.yellow:hover {
 }
 
 a.logo {
-  width: 50%;
+  display: flex;
   margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+img.logo {
+  width: 80%;
 }
 
 .menu-item {
