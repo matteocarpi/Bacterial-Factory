@@ -21,7 +21,7 @@ url: "https://www.bacterialfactory.com" # the base hostname & protocol for your 
 timezone: Europe/Berlin
 twitter_username: jekyllrb
 github_username:  jekyll
-
+logo: /assets/logo.png
 # Build settings
 markdown: kramdown
 theme: minima
