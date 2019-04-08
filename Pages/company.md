@@ -16,23 +16,18 @@ people:
 - template: person
   avatar: "/uploads/matteo.jpg"
   name: Matteo Carpi
-  bio: As an Italian person from Italy he loves cooking Italian food. But thinks nobody
-    realises that he can’t cook anything else but Italian food. In his spare time,
-    he makes cheese porn, which is particularly tasteless, making him a respectable
-    member of the community.
+  bio: |-
+    He trained at the “Royal Central School of Speech and Drama”. He also studied music and trained in Linklater’s Voice method “Freeing the Natural Voice”. He’s been working as musician, per- former, videomaker and web-developer. In his spare time, he makes cheese porn, which is particularly tasteless, making him a respectable member of the community.
 - template: person
   avatar: "/uploads/ainhoa.jpg"
   name: Ainhoa Hevia Uria
-  bio: She is famous amongst friends for having an equally as large mouth as Niall.
-    She is the only Spanish person to have a fake Spanish accent. She says she’s always
-    cold, but we actually think she just loves the feeling of being hugged, all the
-    time, by clothes.
+  bio: |-
+    Previously graduated in Acting and Dramatic Art at the ESAD Asturias, has been working as a performer and director in Spain, Portugal and Germany. She says she’s always cold, but we actually think she just loves the feeling of being hugged, all the time, by clothes.
 - template: person
   avatar: "/uploads/niall.jpg"
   name: Niall Machin
-  bio: If you have a question, just ask Niall. He probably wont know the answer, but
-    he will tell you anyway. He easily looses his patience when people try to boycott
-    his partying plans proposing karaoke nights.
+  bio: |-
+    He is a performer, musician, and director of physical performance. He trained as a Theatre Maker at the University of Kent. After working as an actor for theatre and film in England and touring internationally, he then relocated to Berlin where he easily looses his patience when people try boycotting his party plans by proposing Karaoke nights.
 company_picture: "/uploads/gut-buddies-theatre-company-picture.jpg"
 
 ---
