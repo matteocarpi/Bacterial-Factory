@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Gut Buddies Theatre
-email: matteo@gutbuddiestheatre.com
-description: An international Physical Theatre Company based in Berlin
+title: Bacterial Factory
+email: hello@bacterialfactory.com
+description: An international physical theatre company focusing on absurdist comedy
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.gutbuddiestheatre.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.bacterialfactory.com" # the base hostname & protocol for your site, e.g. http://example.com
 timezone: Europe/Berlin
 twitter_username: jekyllrb
 github_username:  jekyll
