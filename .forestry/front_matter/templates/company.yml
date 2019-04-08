@@ -17,5 +17,3 @@ fields:
   label: People
   template_types:
   - person
-pages:
-- company.md

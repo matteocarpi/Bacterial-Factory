@@ -20,5 +20,3 @@ fields:
   label: Tour
   template_types:
   - tour-date
-pages:
-- index.md
