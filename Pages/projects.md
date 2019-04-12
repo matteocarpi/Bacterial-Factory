@@ -6,6 +6,7 @@ projects:
   - name: Gut Buddies
     image: "/assets/projects/gut-buddies.jpg"
     galleryStyle: false
+    teaser: "https://vimeo.com/293715464"
     description: |-
       Karl is a bacterial worm. Like all of us he’s been trying to find his own habitat, free from interruption and causing no harm to others. Finally, he found a spot in which he can survive undisturbed, until today. Brian is on his first day of work. A white blood cell and a faithful servant to the body but a warm hearted and curious creature. As he works alone he is watched over and commanded by the omnipotent brain. In a world that is threatened by the problems of coexistence and the respect for conformity, is it possible to be “Gut Buddies”? The piece blends cartoon imagery, with strong characters saturated by luminous colors and a space-age backdrop. These lovable, eccentric characters may be magnetic in empathy, but are a problematic pair. They are forced together in a highly institutionalized world riddled with a fear for liberty.
   - name: Who's at The Door, We Can't Be Sure
