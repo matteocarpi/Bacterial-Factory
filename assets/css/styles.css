@@ -179,7 +179,6 @@ a.email {
   color: #FADD8B; }
 
 a.yellow {
-  font-size: 2em;
   color: #FADD8B;
   margin-right: 0.5em; }
 
@@ -198,11 +197,11 @@ a.yellow {
   padding-bottom: 1em; }
 
 .column-half {
-  width: 60%; }
+  width: 50vw; }
 
 p.yellow {
   color: #FADD8B;
-  padding: 1em 0 1em 0; }
+  padding: 1em 2em; }
 
 .portfolio-item {
   display: flex;
@@ -210,98 +209,41 @@ p.yellow {
   min-height: 500px;
   overflow: hidden; }
 
-.gutbuddies-photo {
-  background-image: url("../assets/projects/Asset 1pj.png");
-  object-fit: contain;
-  flex-shrink: 0;
+.portfolio-item.red {
+  background-color: #B25B48; }
+
+.portfolio-item.blue {
+  background-color: #1A3557; }
+
+.column-half.project-photo {
+  background-position: center;
   background-size: cover; }
+
+.portfolio-item.red div.project-photo {
+  border-bottom-right-radius: 500px; }
+
+.portfolio-item.blue div.project-photo {
+  border-bottom-left-radius: 500px; }
 
 .portfolio-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2em;
   align-items: center;
-  background-color: #B25B48;
   position: relative;
   z-index: 1; }
 
-.right-lip {
-  padding-right: 4em;
-  background-color: #B25B48; }
-
-.right-lip::before {
-  content: "";
-  background-color: #B25B48;
-  position: absolute;
-  z-index: -1;
-  width: 150%;
-  height: 300%;
-  transform: rotate(25deg); }
-
-.left-lip {
-  padding-left: 4em;
-  background-color: #1A3557; }
-
-.left-lip::before {
-  content: "";
-  background-color: #1A3557;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 300%;
-  left: 50%;
-  transform: rotate(-25deg); }
-
-.cats-photo {
-  background-image: url("../assets/projects/Asset 3pj.png");
-  object-fit: contain;
-  flex-shrink: 0;
-  background-size: cover; }
-
-.barbados-photo {
-  background-image: url("../assets/projects/Asset 4pj.png");
-  object-fit: contain;
-  flex-shrink: 0;
-  background-size: cover; }
-
-.nature-honour-wrapper {
-  background-color: #1A3557;
+.project-gallery {
+  padding: 3rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2em; }
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  flex-shrink: 1;
+  margin: 0 auto; }
 
-.nature-honour-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-p.nature-text {
-  width: 60%; }
-
-.nature-honour-photos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1em;
-  row-gap: 1em;
-  object-fit: contain; }
-
-img.nature {
-  width: 100%; }
-
-img.main-pic {
-  grid-column-start: 1;
-  grid-column-end: 3; }
-
-img.mat {
-  grid-column-start: 1;
-  grid-column-end: 2; }
-
-img.fish {
-  grid-column-start: 2;
-  grid-column-end: 3; }
+.gallery-item + .gallery-item {
+  margin-top: 2rem; }
 
 /*Colours*/
 @font-face {
@@ -335,7 +277,9 @@ a {
 
 p {
   color: #1A3557;
-  font-family: Campton-Book, Helvetica, sans-serif; }
+  font-family: Campton-Book, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5; }
 
 h1 {
   font-family: Campton-Bold , Helvetica, sans-serif;
@@ -363,7 +307,7 @@ line {
   color: #1A3557; }
 
 a.cta {
-  margin-top: 2rem; }
+  margin: 2rem 0; }
 
 a.cta.yellow {
   background-color: #FADD8B;
@@ -505,8 +449,32 @@ span.footer-caption {
     display: none; } }
 /* Small Laptop */
 @media screen and (max-width: 1025px) {
-  .left-lip::before, .right-lip::before {
-    display: none; } }
+  .project-photo {
+    min-height: 300px; }
+
+  .column-half {
+    width: 100%; }
+
+  .portfolio-item.red {
+    flex-direction: column; }
+    .portfolio-item.red .portfolio-text {
+      margin: 0 auto; }
+
+  .portfolio-item.blue {
+    flex-direction: column-reverse; }
+    .portfolio-item.blue .portfolio-text {
+      margin: 0 auto; }
+
+  .portfolio-item.galleryStyle {
+    padding-top: 2rem;
+    flex-direction: column; }
+
+  .gallery-item {
+    width: 80%;
+    height: 50%;
+    object-fit: contain;
+    margin-right: auto;
+    margin-left: auto; } }
 @media screen and (min-width: 769px) {
   #mobile-menu {
     display: none; } }
