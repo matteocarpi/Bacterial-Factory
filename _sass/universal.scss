@@ -39,6 +39,8 @@ a {
 p {
   color: #1A3557;
   font-family: Campton-Book, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 h1 {
@@ -73,7 +75,7 @@ line {
   color: #1A3557;
 }
 a.cta {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 a.cta.yellow {
   background-color: $gyellow;
@@ -94,6 +96,13 @@ a.cta.yellow:hover {
   background-color: $gred;
   color: $gyellow;
   border: solid 1px $gyellow;
+}
+.red {
+  background-color: $gred;
+}
+
+.blue {
+  background-color: $gblue;
 }
 /*Header*/
 

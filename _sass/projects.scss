@@ -8,12 +8,12 @@
 }
 
 .column-half {
-  width:60%;
+  width: 50vw;
 }
 
 p.yellow {
   color: #FADD8B;
-  padding: 1em 0 1em 0;
+  padding: 1em 2em;
 }
 
 .portfolio-item {
@@ -23,66 +23,33 @@ p.yellow {
   overflow: hidden;
 }
 
-.gutbuddies-photo {
-  background-image: url("../assets/projects/Asset 1pj.png");
-  object-fit: contain;
-  flex-shrink: 0;
-  background-size: cover;
+.portfolio-item.red {
+  div.project-photo {
+    border-bottom-right-radius: 500px;
+  }
+  .column-half.project-photo {
+      background-position: right;
+      background-size: cover;
+  }
+}
+
+.portfolio-item.blue {
+  div.project-photo {
+    border-bottom-left-radius: 500px;
+  }
+  .column-half.project-photo {
+      background-position: left;
+      background-size: cover;
+  }
 }
 
 .portfolio-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2em;
   align-items: center;
-  background-color: #B25B48;
-  position: relative;
+  position:relative;
   z-index: 1;
-}
-
-
-
-.right-lip {
-  padding-right: 4em;
-  background-color: #B25B48;
-}
-.right-lip::before {
-    content: "";
-    background-color: #B25B48;
-    position: absolute;
-    z-index: -1;
-    width: 150%;
-    height: 300%;
-    transform: rotate(25deg);
-}
-
-.left-lip {
-  padding-left: 4em;
-  background-color: #1A3557;
-}
-.left-lip::before {
-    content: "";
-    background-color: #1A3557;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 300%;
-    left: 50%;
-    transform: rotate(-25deg);
-}
-.cats-photo {
-  background-image: url("../assets/projects/Asset 3pj.png");
-  object-fit: contain;
-  flex-shrink: 0;
-  background-size: cover;
-}
-
-.barbados-photo {
-  background-image: url("../assets/projects/Asset 4pj.png");
-  object-fit: contain;
-  flex-shrink: 0;
-  background-size: cover;
 }
 
 .nature-honour-wrapper {

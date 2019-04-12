@@ -10,47 +10,74 @@ layout: default
     <!--Gut Buddies-->
     {% for item in page.projects %}
       {% assign mod = forloop.index | modulo: 2 %}
-        {% if item.galleryStyle == false %}
           {% if mod != 0 %}
-
-            <div class="portfolio-item right">
-              <div class="column-half project-photo" style="background-image: url("{{ item.image }}"); ">
-              </div>
-                <div class="column-half portfolio-text right-lip">
-                  <h2>{{ item.name }}</h2>
-                    <p class="yellow">{{ item.description }}</p>
-
-                    {% if item.teaser %}
-                        <a class="cta yellow xfade" target="_blank" href="{{ item.teaser }}">Watch Teaser</a>
-                    {% endif %}
-
-
+            {% if item.galleryStyle == true %}
+              <div class="galleryStyle red">
+                <div id="" class="project-info" >
+                  <h2 class="yellow">{{ item.name }}</h2>
+                  <p class="yellow">{{ item.description }}</p>
                 </div>
+
+                <div class="nature-honour-photos">
+
+                      <img class="main-pic nature"src="/assets/projects/in-natures-honour-1.jpg" alt="">
+                      <img class="mat nature"src="/assets/projects/in-natures-honour-2.jpg" alt="">
+                      <img class="fish nature"src="/assets/projects/in-natures-honour-3.jpg" alt="">
+                </div>
+              </div>
+
+            {% else %}
+
+              <div class="portfolio-item red">
+                <div class="column-half project-photo" style="background-image: url({{ item.image }}); ">
+                </div>
+                  <div class="column-half portfolio-text right-lip">
+                    <h2>{{ item.name }}</h2>
+                      <p class="yellow">{{ item.description }}</p>
+
+                      {% if item.teaser %}
+                          <a class="cta yellow xfade" target="_blank" href="{{ item.teaser }}">Watch Teaser</a>
+                      {% endif %}
+
+                  </div>
+              </div>
+            {% endif %}
+
+          {% else %}
+
+          {% if item.galleryStyle == true %}
+
+            <div class="galleryStyle blue">
+              <div id="" class="portfolio-text" >
+                <h2 class="yellow">{{ item.name }}</h2>
+                <p class="yellow">{{ item.description }}</p>
+              </div>
+
+              <div class="project-gallery">
+                {% for item in item.gallery %}
+                  <img src="{{ item }}" alt="{{ item }}">
+                {% endfor %}
+              </div>
             </div>
 
           {% else %}
 
-          <div class="portfolio-item left">
-            <div class="column-half portfolio-text left-lip">
-              <h2>{{ item.name }}</h2>
-                <p class="yellow"> {{ item.description | markdownify }} </p>
-            </div>
+            <div class="portfolio-item blue">
+              <div class="column-half portfolio-text left-lip">
+                <h2>{{ item.name }}</h2>
+                <p class="yellow"> {{ item.description }} </p>
+              </div>
 
-            <div class="column-half project-photo" style="background-image: url("{{ item.image }}")">
-            </div>
+              <div class="column-half project-photo" style="background-image: url({{ item.image }})">
+              </div>
 
-          </div>
+            </div>
 
           {% endif %}
         {% endif %}
     {% endfor %}
 
-    <div class="nature-honour-photos">
 
-          <img class="main-pic nature"src="/assets/projects/in-natures-honour-1.jpg" alt="">
-          <img class="mat nature"src="/assets/projects/in-natures-honour-2.jpg" alt="">
-          <img class="fish nature"src="/assets/projects/in-natures-honour-3.jpg" alt="">
-    </div>
 
     <div class="portfolio-item right">
       <div class="column-half project-photo" style="background-image: url("/assets/projects/gut-buddies.jpg"); ">
