@@ -60,8 +60,34 @@
 }
 /* Small Laptop */
 @media screen and (max-width: 1025px) {
-  .left-lip::before, .right-lip::before{
-    display: none;
+  .project-photo {
+    min-height: 300px;
+  }
+  .column-half {
+    width: 100%;
+  }
+  .portfolio-item.red {
+    flex-direction: column;
+    .portfolio-text {
+      margin: 0 auto;
+    }
+  }
+  .portfolio-item.blue {
+    flex-direction: column-reverse;
+    .portfolio-text {
+      margin: 0 auto;
+    }
+  }
+  .portfolio-item.galleryStyle {
+    padding-top: 2rem;
+    flex-direction: column;
+  }
+  .gallery-item {
+    width: 80%;
+    height: 50%;
+    object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 769px) {

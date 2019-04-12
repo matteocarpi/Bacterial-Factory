@@ -12,17 +12,16 @@ layout: default
       {% assign mod = forloop.index | modulo: 2 %}
           {% if mod != 0 %}
             {% if item.galleryStyle == true %}
-              <div class="galleryStyle red">
-                <div id="" class="project-info" >
+              <div class="portfolio-item galleryStyle red">
+                <div id="" class="portfolio-text" >
                   <h2 class="yellow">{{ item.name }}</h2>
                   <p class="yellow">{{ item.description }}</p>
                 </div>
 
-                <div class="nature-honour-photos">
-
-                      <img class="main-pic nature"src="/assets/projects/in-natures-honour-1.jpg" alt="">
-                      <img class="mat nature"src="/assets/projects/in-natures-honour-2.jpg" alt="">
-                      <img class="fish nature"src="/assets/projects/in-natures-honour-3.jpg" alt="">
+                <div class="project-gallery">
+                  {% for item in item.gallery %}
+                    <img src="{{ item }}" alt="{{ item }}">
+                  {% endfor %}
                 </div>
               </div>
 
@@ -47,7 +46,7 @@ layout: default
 
           {% if item.galleryStyle == true %}
 
-            <div class="galleryStyle blue">
+            <div class="portfolio-item galleryStyle blue">
               <div id="" class="portfolio-text" >
                 <h2 class="yellow">{{ item.name }}</h2>
                 <p class="yellow">{{ item.description }}</p>
@@ -55,7 +54,7 @@ layout: default
 
               <div class="project-gallery">
                 {% for item in item.gallery %}
-                  <img src="{{ item }}" alt="{{ item }}">
+                  <img class="gallery-item" src="{{ item }}" alt="{{ item }}">
                 {% endfor %}
               </div>
             </div>
@@ -76,18 +75,3 @@ layout: default
           {% endif %}
         {% endif %}
     {% endfor %}
-
-
-
-    <div class="portfolio-item right">
-      <div class="column-half project-photo" style="background-image: url("/assets/projects/gut-buddies.jpg"); ">
-      </div>
-        <div class="column-half portfolio-text right-lip">
-          <h2>Gut Buddies</h2>
-            <p class="yellow">{{ page.gutbuddies }}</p>
-
-            <a class="cta yellow xfade" target="_blank" href="https://vimeo.com/293715464">Watch Teaser</a>
-
-        </div>
-    </div>
-    </div>
