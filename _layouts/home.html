@@ -52,7 +52,7 @@ layout: default
               {% if item.link %}
               <a {% if item.past != true %} href="{{ item.link }}" {% endif %} target="_blank">
               {% endif %}
-                <li {% if item.past == true %} style="color: rgba(32, 52, 85, 0.5);" {% endif %}> {% assign day = item.first-date | date: "%-d" %}
+                <li {% if item.past == true %} style="color: rgba(32, 52, 85, 0.5); text-decoration: line-through;" {% endif %}> {% assign day = item.first-date | date: "%-d" %}
                 {% case day %}
                   {% when '1' or '21' or '31' %}{{ day }}st
                   {% when '2' or '22' %}{{ day }}nd
@@ -75,7 +75,7 @@ layout: default
 
                   {% else %}
 
-                  <li {% if item.past == true %} style="color: rgba(32, 52, 85, 0.5);" {% endif %}> {% assign day = item.first-date | date: "%-d" %}
+                  <li {% if item.past == true %} style="color: rgba(32, 52, 85, 0.5); text-decoration: line-through;" {% endif %}> {% assign day = item.first-date | date: "%-d" %}
                     {% case day %}
                       {% when '1' or '21' or '31' %}{{ day }}st
                       {% when '2' or '22' %}{{ day }}nd
