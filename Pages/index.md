@@ -1,9 +1,9 @@
 ---
 layout: home
-permalink: /
+permalink: "/"
 title: Home
-about: Bacterial Factory is an international physical theatre company specialising in absurdist
-  comedy.
+about: Bacterial Factory is an international physical theatre company specialising
+  in absurdist comedy.
 tour:
 - template: tour-date
   city: Berlin
@@ -63,10 +63,17 @@ tour:
   last-date: 2019-05-12 14:30:00 +0000
   link: https://www.brightonfringe.org/whats-on/gut-buddies-135880/
 - template: tour-date
+  city: Berlin
+  country: 'Germany '
+  venue: 'Arthaus.Berlin Festival '
+  first-date: 2019-05-23 22:00:00 +0000
+  last-date: 05/26/2019
+  past: ''
+- template: tour-date
   city: Edinburgh
   country: UK
-  first-date: 2019-08-02 20:30:00 +0200
-  last-date: 2019-08-26 20:30:00 +0200
+  first-date: 2019-08-02 18:30:00 +0000
+  last-date: 2019-08-26 18:30:00 +0000
   venue: Edinburgh Fringe Festival
 
 ---
