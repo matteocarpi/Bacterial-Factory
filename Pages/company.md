@@ -28,6 +28,11 @@ people:
   name: Niall Machin
   bio: |-
     He is a performer, musician, and director of physical performance. He trained as a Theatre Maker at the University of Kent. After working as an actor for theatre and film in England and touring internationally, he then relocated to Berlin where he easily looses his patience when people try boycotting his party plans by proposing Karaoke nights.
+- template: person
+  avatar: "/uploads/julia.jpg"
+  name: Julia Vandehof
+  bio: |-
+    She is a theatre maker, actress and performer. She lives and works in Berlin and Vienna. In her work she is interested in using a strong visual language with non-linear forms of narration. An interdisciplinary approach combines movement, drama, video and stage design as complementary, interconnected disciplines. A collaborative way in devising, the idea of the Poetic Body and the practice of Embodied Movement are at the core of her work.
 company_picture: "/uploads/gut-buddies-theatre-company-picture.jpg"
 
 ---
