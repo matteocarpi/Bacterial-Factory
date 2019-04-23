@@ -67,7 +67,7 @@ tour:
   country: 'Germany '
   venue: 'Arthaus.Berlin Festival '
   first-date: 2019-05-23 22:00:00 +0000
-  last-date: 05/26/2019
+  last-date: 26th
   past: ''
 - template: tour-date
   city: Edinburgh
