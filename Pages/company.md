@@ -49,4 +49,11 @@ collaborators:
 - template: collaborator
   name: Angharad Matthews
   role: Costume Design
+- template: collaborator
+  name: Valentina Bordenave
+  role: Movement Coach
+- template: collaborator
+  name: Jess Poulos
+  role: Graphic Design
+
 ---
