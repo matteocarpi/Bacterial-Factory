@@ -45,5 +45,8 @@ people:
     in using a strong visual language with non-linear forms of narration. A collaborative
     way in devising and the idea of the Poetic Body are at the core of her work.
 company_picture: "/uploads/gut-buddies-theatre-company-picture.jpg"
-
+collaborators:
+- template: collaborator
+  name: Angharad Matthews
+  role: Costume Design
 ---

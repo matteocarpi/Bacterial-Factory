@@ -9,7 +9,7 @@ layout: default
 
       <div class="red band">
       </div>
-      
+
       <div class="the-company">
 
         <div class="title">
@@ -45,4 +45,11 @@ layout: default
         {% endfor %}
 
       </div>
+
+      <section>
+        <h1>Collaborators</h1>
+          {% for item in page.collaborators %}
+            <span class="collaborator"> <strong>{{ item.name }}</strong> - <em>{{ item.role }}</em> </span>
+          {% endfor %}
+      </section>
     </div>
