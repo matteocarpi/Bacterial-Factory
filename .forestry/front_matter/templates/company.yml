@@ -17,3 +17,8 @@ fields:
   label: People
   template_types:
   - person
+- type: blocks
+  name: collaborators
+  label: Collaborators
+  template_types:
+  - collaborator
