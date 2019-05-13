@@ -4,6 +4,7 @@ permalink: "/"
 title: Home
 about: Bacterial Factory is an international physical theatre company specialising
   in absurdist comedy.
+upNext: "/assets/whos-at-the-door-arthaus.jpg"
 tour:
 - template: tour-date
   city: Berlin
