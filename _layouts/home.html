@@ -32,14 +32,15 @@ layout: default
           <div class="tour-left">
 
             <h3>Up Next</h3>
+
             <div class="tour-up-next">
-              <video class="up-next" src="/assets/gut-buddies-brighton-fringe.mp4" autoplay loop >
-              </video>
 
-
+              <a target="_blank" href="https://www.arthausberlinfestival.com/">
+                <img class="up-next" src="{{ page.upNext }}"></img>
+              </a>
 
             </div>
-            <a class="cta red xfade" target="_blank" href="https://www.brightonfringe.org/whats-on/gut-buddies-135880/">Book Tickets</a>
+            <!-- <a class="cta red xfade" target="_blank" href="https://www.brightonfringe.org/whats-on/gut-buddies-135880/">Book Tickets</a> -->
           </div>
 
           <div class="tour-right">
@@ -52,7 +53,7 @@ layout: default
               {% if item.link %}
               <a {% if item.past != true %} href="{{ item.link }}" {% endif %} target="_blank">
               {% endif %}
-                <li {% if item.past == true %} style="color: rgba(32, 52, 85, 0.5); text-decoration: line-through;" {% endif %}> {% assign day = item.first-date | date: "%-d" %}
+                <li {% if item.past == true %} style="color: rgba(178, 91, 72, 0.5); text-decoration: line-through;" {% endif %}> {% assign day = item.first-date | date: "%-d" %}
                 {% case day %}
                   {% when '1' or '21' or '31' %}{{ day }}st
                   {% when '2' or '22' %}{{ day }}nd
@@ -68,14 +69,14 @@ layout: default
                     {% else %}{{ day }}th
                   {% endcase %}
 
-                {{ item.first-date | date: "of %B, %Y" }}<data value=""></data> - <span style="font-style: italic;">{{ item.venue }}</span> {% if item.venue %} - {% endif %} <strong>{{ item.city }}, {{ item.country }}</strong></li>
+                {{ item.first-date | date: "of %B, %Y" }}<data value=""></data> - <span style=" {% if item.past == true %} color: rgba(178, 91, 72, 0.5); text-decoration: line-through; {% endif %} font-style: italic;">{{ item.venue }}</span> {% if item.venue %} - {% endif %} <strong>{{ item.city }}, {{ item.country }}</strong></li>
               {% if item.link %}
                 </a>
               {% endif %}
 
                   {% else %}
 
-                  <li {% if item.past == true %} style="color: rgba(32, 52, 85, 0.5); text-decoration: line-through;" {% endif %}> {% assign day = item.first-date | date: "%-d" %}
+                  <li {% if item.past == true %} style="color: rgba(178, 91, 72, 0.5); text-decoration: line-through;" {% endif %}> {% assign day = item.first-date | date: "%-d" %}
                     {% case day %}
                       {% when '1' or '21' or '31' %}{{ day }}st
                       {% when '2' or '22' %}{{ day }}nd
