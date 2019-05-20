@@ -42,10 +42,8 @@ people:
   bio: 'She is a theatre maker, actress and performer based across Berlin and Vienna.
     She trained at Drama College Vienna and graduated in Theatre, Film, and Media
     Studies at the University of Vienna. In her work she is interested in using a
-    strong visual language with non-linear forms of narration. A collaborative way
-    in devising and the idea of the Poetic Body are at the core of her work. She is
-    the original author of the quote: “You can’t make an omelette without breaking
-    some eggs”.'
+    strong visual language with non-linear forms of narration. She is the original
+    author of the quote: “You can’t make an omelette without breaking some eggs”.'
 company_picture: "/uploads/gut-buddies-theatre-company-picture.jpg"
 collaborators:
 - template: collaborator
