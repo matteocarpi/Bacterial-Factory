@@ -46,6 +46,9 @@ people:
     author of the quote: “You can’t make an omelette without breaking some eggs”.'
 company_picture: "/uploads/gut-buddies-theatre-company-picture.jpg"
 collaborators:
+- template: ''
+  name: Pietro Autorino
+  role: Research Advisor
 - template: collaborator
   name: Angharad Matthews
   role: Costume Design
