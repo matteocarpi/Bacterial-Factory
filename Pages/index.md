@@ -7,14 +7,6 @@ about: Bacterial Factory is an international physical theatre company specialisi
 upNext: "/assets/whos-at-the-door-arthaus.jpg"
 tour:
 - template: tour-date
-  city: Kingston
-  country: UK
-  venue: IYAF
-  first-date: 2019-07-06 22:00:00 +0000
-  last-date: ''
-  link: http://iyafestival.org.uk
-  past: ''
-- template: tour-date
   city: Berlin
   country: Germany
   venue: Ada Studio
@@ -78,6 +70,14 @@ tour:
   venue: 'Arthaus.Berlin Festival '
   first-date: 2019-05-24 22:00:00 +0000
   last-date: ''
+  past: true
+- template: tour-date
+  city: Kingston
+  country: UK
+  venue: IYAF
+  first-date: 2019-07-06 22:00:00 +0000
+  last-date: ''
+  link: http://iyafestival.org.uk
   past: ''
 - template: tour-date
   city: Edinburgh
