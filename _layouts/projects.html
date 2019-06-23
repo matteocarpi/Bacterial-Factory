@@ -7,7 +7,6 @@ layout: default
       <h1>Projects</h1>
     </div>
 
-    <!--Gut Buddies-->
     {% for item in page.projects %}
       {% assign mod = forloop.index | modulo: 2 %}
           {% if mod != 0 %}
@@ -15,7 +14,7 @@ layout: default
               <div class="portfolio-item galleryStyle red">
                 <div id="" class="portfolio-text" >
                   <h2 class="yellow">{{ item.name }}</h2>
-                  <p class="yellow">{{ item.description }}</p>
+                  <p class="yellow">{{ item.description | markdownify }}</p>
                 </div>
 
                 <div class="project-gallery">
@@ -33,6 +32,12 @@ layout: default
                   <div class="column-half portfolio-text right-lip">
                     <h2>{{ item.name }}</h2>
                       <p class="yellow">{{ item.description }}</p>
+
+                      {% if item.awards %}
+                        {% for award in item.awards %}
+                          <img src="{{ award }}" alt="">
+                        {% endfor %}
+                      {% endif %}
 
                       {% if item.teaser %}
                           <a class="cta yellow xfade" target="_blank" href="{{ item.teaser }}">Watch Teaser</a>
