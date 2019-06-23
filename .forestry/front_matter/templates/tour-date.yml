@@ -13,10 +13,10 @@ fields:
   name: venue
   label: Venue
 - type: datetime
-  name: first-date
+  name: beginning-date
   label: First Show Date
 - type: datetime
-  name: last-date
+  name: end-date
   label: Last Show Date
 - type: text
   name: link
