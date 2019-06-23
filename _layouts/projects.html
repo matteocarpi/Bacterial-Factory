@@ -8,59 +8,70 @@ layout: default
     </div>
 
     <!--Gut Buddies-->
-    <div class="portfolio-item right">
-      <div class="column-half gutbuddies-photo">
-        <img class="portfolio-photo" src="/assets/projects/Asset 1pj.png" alt="">
-      </div>
-        <div class="column-half portfolio-text right-lip">
-          <h2>Gut Buddies</h2>
-            <p class="yellow">{{ page.gutbuddies }}</p>
+    {% for item in page.projects %}
+      {% assign mod = forloop.index | modulo: 2 %}
+          {% if mod != 0 %}
+            {% if item.galleryStyle == true %}
+              <div class="portfolio-item galleryStyle red">
+                <div id="" class="portfolio-text" >
+                  <h2 class="yellow">{{ item.name }}</h2>
+                  <p class="yellow">{{ item.description }}</p>
+                </div>
 
-            <div class="cta-container-yellow">
-              <a class="cta yellow xfade" target="_blank" href="https://vimeo.com/293715464">Watch Teaser</a>
+                <div class="project-gallery">
+                  {% for item in item.gallery %}
+                    <img src="{{ item }}" alt="{{ item }}">
+                  {% endfor %}
+                </div>
+              </div>
+
+            {% else %}
+
+              <div class="portfolio-item red">
+                <div class="column-half project-photo" style="background-image: url({{ item.image }}); ">
+                </div>
+                  <div class="column-half portfolio-text right-lip">
+                    <h2>{{ item.name }}</h2>
+                      <p class="yellow">{{ item.description }}</p>
+
+                      {% if item.teaser %}
+                          <a class="cta yellow xfade" target="_blank" href="{{ item.teaser }}">Watch Teaser</a>
+                      {% endif %}
+
+                  </div>
+              </div>
+            {% endif %}
+
+          {% else %}
+
+          {% if item.galleryStyle == true %}
+
+            <div class="portfolio-item galleryStyle blue">
+              <div id="" class="portfolio-text" >
+                <h2 class="yellow">{{ item.name }}</h2>
+                <p class="yellow">{{ item.description }}</p>
+              </div>
+
+              <div class="project-gallery">
+                {% for item in item.gallery %}
+                  <img class="gallery-item" src="{{ item }}" alt="{{ item }}">
+                {% endfor %}
+              </div>
             </div>
 
-        </div>
-    </div>
+          {% else %}
 
-    <!--Who's at the door-->
-    <div class="portfolio-item left">
-      <div class="column-half portfolio-text left-lip">
-        <h2>Who’s at the door, we can’t be sure</h2>
-          <p class="yellow"> {{ page.cats }} </p>
-      </div>
+            <div class="portfolio-item blue">
+              <div class="column-half portfolio-text left-lip">
+                <h2>{{ item.name }}</h2>
+                <p class="yellow"> {{ item.description }} </p>
+              </div>
 
-      <div class="column-half cats-photo">
-        <img class"portfolio-photo" src="/assets/projects/Asset 3pj.png" alt=""/>
-      </div>
+              <div class="column-half project-photo" style="background-image: url({{ item.image }})">
+              </div>
 
-    </div>
+            </div>
 
-    <!--Barbados-->
-    <div class="portfolio-item right">
-      <div class="column-half barbados-photo">
-        <img class="portfolio-photo" src="/assets/projects/Asset 4pj.png" alt=""/>
-      </div>
-        <div class="column-half portfolio-text right-lip">
-          <h2>Barbados</h2>
-            <p class="yellow">
-              {{ page.barbados }}
-            </p>
-        </div>
-      </div>
-
-    <!--In Nature's Honour-->
-    <div class="nature-honour-wrapper">
-      <div class="nature-honour-text">
-        <h2>In Nature's Honour</h2>
-        <p class="nature-text yellow">{{ page.nature_honour }}</p>
-      </div>
-
-      <div class="nature-honour-photos">
-
-            <img class="main-pic nature"src="/assets/projects/Asset 5pj.png" alt="">
-            <img class="mat nature"src="/assets/projects/Asset 6pj.png" alt="">
-            <img class="fish nature"src="/assets/projects/Asset 7pj.png" alt="">
-      </div>
-    </div>
-</body>
+          {% endif %}
+        {% endif %}
+    {% endfor %}

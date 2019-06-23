@@ -11,6 +11,7 @@ tour:
   country: Germany
   venue: Ada Studio
   first-date: 2018-12-09T23:10:00.000+00:00
+  last-date: ''
   link: http://www.ada-studio.de/
   past: true
 - template: tour-date
@@ -20,6 +21,7 @@ tour:
   venue: Tifa Working Studios
   link: http://tifa.edu.in/
   first-date: 2019-01-19T18:30:00.000+00:00
+  last-date: ''
 - template: tour-date
   city: Bangalore
   country: India
@@ -67,12 +69,14 @@ tour:
   country: 'Germany '
   venue: 'Arthaus.Berlin Festival '
   first-date: 2019-05-24 22:00:00 +0000
+  last-date: ''
   past: true
 - template: tour-date
   city: Kingston
   country: UK
   venue: IYAF
   first-date: 2019-07-06 22:00:00 +0000
+  last-date: ''
   link: http://iyafestival.org.uk
   past: ''
 - template: tour-date
@@ -81,4 +85,5 @@ tour:
   first-date: 2019-08-02T18:30:00.000+00:00
   last-date: '2019-08-26T18:30:00.000+00:00'
   venue: Edinburgh Fringe Festival
+
 ---
