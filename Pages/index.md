@@ -68,14 +68,14 @@ tour:
   city: Berlin
   country: 'Germany '
   venue: 'Arthaus.Berlin Festival '
-  beginning-date: 2019-05-24 22:00:00 +0000
+  beginning-date: 2019-05-24T22:00:00.000+00:00
   end-date: ''
   past: true
 - template: tour-date
   city: Kingston
   country: UK
   venue: IYAF
-  beginning-date: 2019-07-06 22:00:00 +0000
+  beginning-date: 2019-07-06T22:00:00.000+00:00
   end-date: ''
   link: http://iyafestival.org.uk
   past: ''
@@ -85,5 +85,6 @@ tour:
   beginning-date: 2019-08-02T18:30:00.000+00:00
   end-date: '2019-08-26T18:30:00.000+00:00'
   venue: Edinburgh Fringe Festival
+  link: https://tickets.edfringe.com/whats-on/gut-buddies
 
 ---
