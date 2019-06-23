@@ -77,7 +77,7 @@ tour:
   venue: IYAF
   beginning-date: 2019-07-06T22:00:00.000+00:00
   end-date: ''
-  link: http://iyafestival.org.uk
+  link: https://www.rosetheatrekingston.org/whats-on/best-of-brighton-fringe--children-and-families--gut-buddies
   past: ''
 - template: tour-date
   city: Edinburgh
