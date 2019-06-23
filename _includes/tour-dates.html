@@ -1,0 +1,40 @@
+{% for item in page.tour %}
+  {% if item.end-date and item.end-date != '' %}
+
+{% if item.link %}
+<a href="{{ item.link }}" target="_blank">
+{% endif %}
+  <li {% if item.past == true %} style="color: rgba(178, 91, 72, 0.5); text-decoration: line-through;" {% endif %}> {% assign day = item.beginning-date | date: "%-d" %}
+  {% case day %}
+    {% when '1' or '21' or '31' %}{{ day }}st
+    {% when '2' or '22' %}{{ day }}nd
+    {% when '3' or '23' %}{{ day }}rd
+    {% else %}{{ day }}th
+  {% endcase %}
+  -
+  {% assign day = item.end-date | date: "%-d" %}
+    {% case day %}
+      {% when '1' or '21' or '31' %}{{ day }}st
+      {% when '2' or '22' %}{{ day }}nd
+      {% when '3' or '23' %}{{ day }}rd
+      {% else %}{{ day }}th
+    {% endcase %}
+
+  {{ item.beginning-date | date: "of %B, %Y" }}<data value=""></data> - <span style=" {% if item.past == true %} color: rgba(178, 91, 72, 0.5); text-decoration: line-through; {% endif %} font-style: italic;">{{ item.venue }}</span> {% if item.venue %} - {% endif %} <strong>{{ item.city }}, {{ item.country }}</strong></li>
+{% if item.link %}
+  </a>
+{% endif %}
+
+    {% else %}
+
+    <li {% if item.past == true %} style="color: rgba(178, 91, 72, 0.5); text-decoration: line-through;" {% endif %}> {% assign day = item.beginning-date | date: "%-d" %}
+      {% case day %}
+        {% when '1' or '21' or '31' %}{{ day }}st
+        {% when '2' or '22' %}{{ day }}nd
+        {% when '3' or '23' %}{{ day }}rd
+        {% else %}{{ day }}th
+      {% endcase %}
+      {{ item.beginning-date | date: "of %B, %Y" }}<data value=""></data> - <a style="font-style: italic;" {% if item.past == false %} href="{{ item.link }}" {% endif %} target="_blank">{{ item.venue }}</a> {% if item.venue %} - {% endif %}<strong>{{ item.city }}, {{ item.country }}</strong></li>
+
+  {% endif %}
+{% endfor%}
