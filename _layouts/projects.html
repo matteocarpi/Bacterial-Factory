@@ -34,9 +34,13 @@ layout: default
                       <p class="yellow">{{ item.description }}</p>
 
                       {% if item.awards %}
-                        {% for award in item.awards %}
-                          <img src="{{ award }}" alt="">
-                        {% endfor %}
+                        <div id="" class="awards" >
+
+                          {% for award in item.awards %}
+                            <img class="award"src="{{ award }}" alt="">
+                          {% endfor %}
+
+                        </div>
                       {% endif %}
 
                       {% if item.teaser %}

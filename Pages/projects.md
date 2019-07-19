@@ -8,9 +8,19 @@ projects:
     galleryStyle: false
     teaser: "https://vimeo.com/293715464"
     description: |-
-      Karl is a bacterial worm. Like all of us he’s been trying to find his own habitat, free from interruption and causing no harm to others. Finally, he found a spot in which he can survive undisturbed, until today. Brian is on his first day of work. A white blood cell and a faithful servant to the body but a warm hearted and curious creature. As he works alone he is watched over and commanded by the omnipotent brain. In a world that is threatened by the problems of coexistence and the respect for conformity, is it possible to be “Gut Buddies”? The piece blends cartoon imagery, with strong characters saturated by luminous colors and a space-age backdrop. These lovable, eccentric characters may be magnetic in empathy, but are a problematic pair. They are forced together in a highly institutionalized world riddled with a fear for liberty.
+      Karl, like all of us, has spent a lot of time looking for his ideal habitat, where he could live in peace. He finally found it in a corner of the world where he can survive undisturbed... at least until today.
+
+      Brian is at his first day of work. A white blood cell, recently graduated from the “Loving International School of Parasite Annihilation”. A faithful servant to the body and a small curious creature with a generous heart.
+
+      He works in solitary but is supervised and directed by the all powerful brain, who manifests itself in the appearance of a telephone.
+      In a world threatened by the problem of coexistence and compliance, is it still possible to be “Gut Buddies”?
     awards:
-      - "/assets/projects/IYAF-Award.png"
+      - "/assets/projects/Best of Brighton.svg"
+      - "/assets/projects/Sold Out.svg"
+    quotes:
+      - author: "Fringe Guru"
+        content: "Surreal, silly, insightful..."
+        stars: 4
   - name: Who's at The Door, We Can't Be Sure
     image: "/assets/projects/whos-at-the-door.jpg"
     galleryStyle: false

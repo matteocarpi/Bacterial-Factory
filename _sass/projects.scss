@@ -69,3 +69,13 @@ p.yellow {
 .gallery-item + .gallery-item {
   margin-top: 2rem;
 }
+
+.awards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  .award {
+    max-width: 300px;
+  }
+}
