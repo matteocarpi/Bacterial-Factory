@@ -10,10 +10,18 @@ layout: default
     {% for item in page.projects %}
       {% assign mod = forloop.index | modulo: 2 %}
           {% if mod != 0 %}
+
             {% if item.galleryStyle == true %}
               <div class="portfolio-item galleryStyle red">
                 <div id="" class="portfolio-text" >
                   <h2 class="yellow">{{ item.name }}</h2>
+
+                    {% for quote in item.quotes %}
+                      <div id="" class="quote" >
+                        <span>"{{ quote.content }}"</span>
+                      </div>
+                    {% endfor %}
+
                   <p class="yellow">{{ item.description | markdownify }}</p>
                 </div>
 
@@ -31,13 +39,36 @@ layout: default
                 </div>
                   <div class="column-half portfolio-text right-lip">
                     <h2>{{ item.name }}</h2>
-                      <p class="yellow">{{ item.description }}</p>
+
+                    {% for quote in item.quotes %}
+                      <div id="" class="quote" >
+
+                        <h3 class="white"><em>"{{ quote.content }}"</em></h3>
+
+                        <div id="" class="signature" >
+                          <div id="" class="stars" >
+                            {% for i in (1..quote.stars) %}
+                              <i class="fas fa-star"></i>
+                              {% endfor %}
+                            </div>
+                            -
+                            <h4 class="author">{{ quote.author }}</h4>
+                        </div>
+
+                      </div>
+
+
+                    {% endfor %}
+
+
+
+                    <p class="yellow">{{ item.description }}</p>
 
                       {% if item.awards %}
                         <div id="" class="awards" >
 
                           {% for award in item.awards %}
-                            <img class="award"src="{{ award }}" alt="">
+                            <img class="award" src="{{ award }}" alt="">
                           {% endfor %}
 
                         </div>

@@ -3,6 +3,9 @@ $gyellow: #FADD8B;
 $gblue: #1A3557;
 $gred: #B25B48;
 
+.white {
+  color: white;
+}
 @font-face {
   font-family: "Campton-Bold";
   src: url("../fonts/Campton Bold.otf");
@@ -55,6 +58,7 @@ h2 {
 h3 {
   color: #1A3557;
   font-family: Campton-Bold;
+  font-size: 23px;
 }
 
 h3.about {

@@ -79,3 +79,16 @@ p.yellow {
     max-width: 300px;
   }
 }
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signature {
+  color: white;
+  display: flex;
+  h4 {
+    margin: 0;
+  }
+}
