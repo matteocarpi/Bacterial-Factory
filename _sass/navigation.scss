@@ -46,6 +46,7 @@ nav ul li {
   cursor: pointer;
 }
 #links{
+  position: fixed;
   display: none;
   flex-direction: column;
   width: 100vw;
