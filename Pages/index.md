@@ -78,7 +78,7 @@ tour:
   beginning-date: 2019-07-06T22:00:00.000+00:00
   end-date: ''
   link: https://www.rosetheatrekingston.org/whats-on/best-of-brighton-fringe--children-and-families--gut-buddies
-  past: true
+  past: ''
 - template: tour-date
   city: Edinburgh
   country: UK
