@@ -6,7 +6,6 @@ function burger(){
   burger.style.padding = '16px 16px 200vw 200vw';
   links.style.display = 'flex';
   quit.style.display = 'inline';
-
 }
 
 function quit(){
