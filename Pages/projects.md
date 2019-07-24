@@ -6,7 +6,7 @@ projects:
   - name: Gut Buddies
     image: "/assets/projects/gut-buddies.jpg"
     galleryStyle: false
-    teaser: "https://vimeo.com/293715464"
+    teaser: "https://vimeo.com/349909318"
     description: |-
       Karl, like all of us, has spent a lot of time looking for his ideal habitat, where he could live in peace. He finally found it in a corner of the world where he can survive undisturbed... at least until today.
 
