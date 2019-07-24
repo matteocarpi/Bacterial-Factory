@@ -15,7 +15,7 @@ projects:
       He works in solitary but is supervised and directed by the all powerful brain, who manifests itself in the appearance of a telephone.
       In a world threatened by the problem of coexistence and compliance, is it still possible to be “Gut Buddies”?
     awards:
-      - "/assets/projects/Best of Brighton.svg"
+      - "/assets/projects/BestOfBrigton.svg"
       - "/assets/projects/Sold Out.svg"
     quotes:
       - author: "Fringe Guru"
