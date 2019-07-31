@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #FADD8B;
+  background-color: $gyellow;
   padding: 3em 0;
   text-align: center;
   line-height: 1.5em;
@@ -82,14 +82,40 @@ p.about {
   padding: 2em 0 2em 0;
   background-color: #FADD8B;
 }
-.tour-up-next {
-  width: 100%;
-}
+
 .up-next {
   width: 400px;
   height: (400*4/3)px;
 }
 
+#up-next {
+  background-color: $gred;
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    white-space: nowrap;
+  }
+  .up-next-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 3rem 0;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      a.cta {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
 
 ul.tour {
   display: table;

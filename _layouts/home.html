@@ -1,76 +1,75 @@
 ---
 layout: default
 ---
+
 <body>
   <div class="title-homepage">
-      <!-- just a background image-->
+    <!-- just a background image-->
+  </div>
+
+  <div id="up-next">
+    <div class="up-next-wrap">
+      <h1 class="yellow">Now on Stage</h1>
+
+      <div class="details">
+
+        <iframe src="https://giphy.com/embed/jOafGu1BCZZc0ZCcWL" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+        <a class="cta yellow xfade" target="_blank" href="https://www.brightonfringe.org/whats-on/gut-buddies-135880/">Book Tickets</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-wrapper">
+    <h1>About</h1>
+
+    <h3 class="about">
+      {{ page.about }}
+    </h3>
+
+
+    <a class="cta red xfade" href="/company/">Read More</a>
+
+  </div>
+
+  <div id="gbprojects" class="gbprojects">
+    <a class="projects-link" href="/projects/">
+      <div class="gbprojects-container xfade">
+        <h2>Projects</h2>
+      </div>
+    </a>
+  </div>
+
+
+  <div id="tour" class="tour">
+
+    <div class="tour-right">
+      <h1>Tour</h1>
+      <ul class="tour">
+
+        {% include tour-dates.html %}
+
+      </ul>
     </div>
 
-    <div id="about" class="about-wrapper">
-        <h1>About</h1>
-
-        <h3 class="about">
-          {{ page.about }}
-        </h3>
+  </div>
 
 
-          <a class="cta red xfade" href="/company/">Read More</a>
+  <div id="contact" class="contact">
 
-      </div>
+    <h2>Contact Us</h2>
 
-      <div id="gbprojects"class="gbprojects">
-        <a class="projects-link" href="/projects/">
-          <div class="gbprojects-container xfade">
-            <h2>Projects</h2>
-          </div>
-        </a>
-      </div>
+    <div class="contact-details">
 
+      <a class="email" href="mailto:hello@gutbuddiestheatre.com"> {{ site.email }}</a>
 
-    <div id="tour" class="tour">
-
-
-          <div class="tour-left">
-
-
-            <h3>Up Next</h3>
-
-             <div class="tour-up-next">
-
-              <iframe src="https://giphy.com/embed/jOafGu1BCZZc0ZCcWL" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-            </div>
-
-
-            <a class="cta red xfade" target="_blank" href="https://www.brightonfringe.org/whats-on/gut-buddies-135880/">Book Tickets</a>
-          </div>
-
-
-          <div class="tour-right">
-            <h1>Tour</h1>
-            <ul class="tour">
-
-            {% include tour-dates.html %}
-
-            </ul>
-          </div>
-        </div>
-
-
-    <div id="contact" class="contact">
-
-      <h2>Contact Us</h2>
-
-      <div class="contact-details">
-
-        <a class="email" href="mailto:hello@gutbuddiestheatre.com"> {{ site.email }}</a>
-
-        <div class="social-yellow">
-          <a class="facebook" target="_blank" href="{{ site.facebook }}"> <i class="social-yellow fab fa-facebook-f"></i></a>
-          <a class="twitter" target="_blank" href="{{ site.twitter }}"> <i class="social-yellow fab fa-twitter"></i></a>
-          <a class="instagram" target="_blank" href="{{ site.instagram }}"> <i class="social-yellow fab fa-instagram"></i></a>
-        </div>
-
+      <div class="social-yellow">
+        <a class="facebook" target="_blank" href="{{ site.facebook }}"> <i class="social-yellow fab fa-facebook-f"></i></a>
+        <a class="twitter" target="_blank" href="{{ site.twitter }}"> <i class="social-yellow fab fa-twitter"></i></a>
+        <a class="instagram" target="_blank" href="{{ site.instagram }}"> <i class="social-yellow fab fa-instagram"></i></a>
       </div>
 
     </div>
+
+  </div>
