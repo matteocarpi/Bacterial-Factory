@@ -86,5 +86,5 @@ tour:
   end-date: '2019-08-26T18:30:00.000+00:00'
   venue: Edinburgh Fringe Festival
   link: https://tickets.edfringe.com/whats-on/gut-buddies
-
+  past: true
 ---
