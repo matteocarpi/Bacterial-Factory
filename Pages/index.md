@@ -2,10 +2,18 @@
 layout: home
 permalink: "/"
 title: Home
-about: Bacterial Factory is an international physical theatre company specialising
-  in absurdist comedy.
+about: Bacterial Factory is an award-winning international physical theatre company
+  specialising in absurdist comedy.
 upNext: "/assets/whos-at-the-door-arthaus.jpg"
 tour:
+- template: ''
+  city: Brighton
+  country: UK
+  venue: 'The Warren: The Nest'
+  beginning-date: 2020-05-15 14:45:00 +0000
+  end-date: 05/17/2020 4:45
+  link: ''
+  past: false
 - template: tour-date
   city: Berlin
   country: Germany
@@ -87,4 +95,5 @@ tour:
   venue: Edinburgh Fringe Festival
   link: https://tickets.edfringe.com/whats-on/gut-buddies
   past: true
+
 ---
