@@ -11,7 +11,7 @@ tour:
   country: UK
   venue: 'The Warren: The Nest'
   beginning-date: 2020-05-15 14:45:00 +0000
-  end-date: 05/17/2020 4:45
+  end-date: 17th
   link: ''
   past: false
 - template: tour-date
