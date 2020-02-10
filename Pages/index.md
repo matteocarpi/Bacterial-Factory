@@ -6,7 +6,7 @@ about: Bacterial Factory is an award-winning international physical theatre comp
   specialising in absurdist comedy.
 upNext: "/assets/whos-at-the-door-arthaus.jpg"
 tour:
-- template: ''
+- template: Tour date
   city: Brighton
   country: UK
   venue: 'The Warren: The Nest'
